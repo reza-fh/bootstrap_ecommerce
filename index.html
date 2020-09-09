@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .rating ul li i{
+            color: orange;
+        }
+        a{
+            color: grey;
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+</head>
+<body>
+    
+    <!-- header section -->
+    <header>
+        <!-- first header -->
+        <div class="container">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-1 mt-1">
+                    <img src="asset/image/enthek.png" alt="logo" width="85" height="30">
+                </div>
+                <!-- search bar -->
+                <div class="col-7">
+                    <form class="form-inline my-2 my-lg-0 w-100">
+                        <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <!-- account -->
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <!-- icon -->
+                            <div class="col-6">
+                                <i style="font-size:2em; color: black;" class="fas fa-shopping-cart"></i>
+                                <i style="font-size:2em; color: black;" class="fas fa-user px-3"></i>
+                            </div>
+                            <!-- register -->
+                            <div class="col-6 p-0">
+                                <p class="text-muted m-0">Welcome!</p>
+                                <div>
+                                    <a href="#" class="float-left">sign in</a>
+                                    <p class="float-left">&nbsp; | &nbsp;</p>
+                                    <a href="#" class="float-left">Registrasi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-bars"></i>   Semua kategori
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sayur</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bumbu Dapur</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">cemilan</a>
+                                </li>
+                            </ul>   
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> 
+    </header>
+    
+    <section id="intro" class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="asset/image/gambar2.jpg" alt="intro" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- service section -->
+    <section class="container">
+        
+        <div class="card">
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-4">
+                            <i class="fas fa-award fa-3x"></i>
+                            <h3 class="h3 mt-4">Dijamin kesegaranya</h3>
+                            <p>Ditempat kami memiliku sayur yang segar dan berkualitas</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fas fa-landmark fa-3x"></i>
+                            <h3 class="h3 mt-4">Dijamin kesegaranya</h3>
+                            <p>Ditempat kami memiliku sayur yang segar dan berkualitas</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fas fa-lock fa-3x"></i>
+                            <h3 class="h3 mt-4">Dijamin Keamananya</h3>
+                            <p>Ditempat kami memiliku sayur yang segar dan berkualitas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- popular section -->
+    
+    <section class="container mt-3">
+        <h2>Sayur</h2>
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <a href="#"><img src="asset/image/brocoli.jpg" alt="Brokoli" class="img-fluid"></a>
+                    <div class="card-body">
+                        <a href="#">Brokoli</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <a href="#"><img src="asset/image/cabe.jpg" alt="cabe" class="img-fluid"></a>
+                    <div class="card-body">
+                        <a href="#">Cabe</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <a href="#"><img src="asset/image/Terong.jpg" alt="Brokoli" class="img-fluid"></a>
+                    <div class="card-body">
+                        <a href="#">Brokoli</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <a href="#"><img src="asset/image/sawi2.jpg" alt="Brokoli" class="img-fluid"></a>
+                    <div class="card-body">
+                        <a href="#">Sawi</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section class="container mt-3">
+            <h2>Bumbu Dapur</h2>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <a href="#"><img src="asset/image/Bawang merah.jpg" alt="Brokoli" class="img-fluid"></a>
+                        <div class="card-body">
+                            <a href="#">Brokoli</a>
+                            <div class="rating mt-3">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <span class="pl-3 text-muted">34 Terjual</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="harga">
+                                <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <a href="#"><img src="asset/image/brocoli.jpg" alt="Brokoli" class="img-fluid"></a>
+                        <div class="card-body">
+                            <a href="#">Brokoli</a>
+                            <div class="rating mt-3">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <span class="pl-3 text-muted">34 Terjual</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="harga">
+                                <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <a href="#"><img src="asset/image/brocoli.jpg" alt="Brokoli" class="img-fluid"></a>
+                        <div class="card-body">
+                            <a href="#">Brokoli</a>
+                            <div class="rating mt-3">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <span class="pl-3 text-muted">34 Terjual</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="harga">
+                                <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <a href="#"><img src="asset/image/brocoli.jpg" alt="Brokoli" class="img-fluid"></a>
+                        <div class="card-body">
+                            <a href="#">Brokoli</a>
+                            <div class="rating mt-3">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <span class="pl-3 text-muted">34 Terjual</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="harga">
+                                <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- arival section -->
+            
+            <section class="container mt-3">
+                <h2>Sayur</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img src="asset/image/brocoli.jpg" alt="Brokoli" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a href="#">Brokoli</a>
+                                <div class="rating mt-3">
+                                    <ul class="list-inline float-left">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted">34 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                    <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img src="asset/image/cabe.jpg" alt="cabe" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a href="#">Cabe</a>
+                                <div class="rating mt-3">
+                                    <ul class="list-inline float-left">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted">34 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                    <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img src="asset/image/Terong.jpg" alt="Brokoli" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a href="#">Brokoli</a>
+                                <div class="rating mt-3">
+                                    <ul class="list-inline float-left">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted">34 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                    <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img src="asset/image/sawi2.jpg" alt="Brokoli" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a href="#">Sawi</a>
+                                <div class="rating mt-3">
+                                    <ul class="list-inline float-left">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted">34 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                    <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- recomended section -->
+                
+                <section class="container mt-3">
+                    <h2>Sayur</h2>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#"><img src="asset/image/brocoli.jpg" alt="Brokoli" class="img-fluid"></a>
+                                <div class="card-body">
+                                    <a href="#">Brokoli</a>
+                                    <div class="rating mt-3">
+                                        <ul class="list-inline float-left">
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        </ul>
+                                        <span class="pl-3 text-muted">34 Terjual</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="harga">
+                                        <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                        <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#"><img src="asset/image/cabe.jpg" alt="cabe" class="img-fluid"></a>
+                                <div class="card-body">
+                                    <a href="#">Cabe</a>
+                                    <div class="rating mt-3">
+                                        <ul class="list-inline float-left">
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        </ul>
+                                        <span class="pl-3 text-muted">34 Terjual</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="harga">
+                                        <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                        <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#"><img src="asset/image/Terong.jpg" alt="Brokoli" class="img-fluid"></a>
+                                <div class="card-body">
+                                    <a href="#">Brokoli</a>
+                                    <div class="rating mt-3">
+                                        <ul class="list-inline float-left">
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        </ul>
+                                        <span class="pl-3 text-muted">34 Terjual</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="harga">
+                                        <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                        <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#"><img src="asset/image/sawi2.jpg" alt="Brokoli" class="img-fluid"></a>
+                                <div class="card-body">
+                                    <a href="#">Sawi</a>
+                                    <div class="rating mt-3">
+                                        <ul class="list-inline float-left">
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        </ul>
+                                        <span class="pl-3 text-muted">34 Terjual</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="harga">
+                                        <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>5000</button>
+                                        <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- patner section -->
+                    
+                    <section class="container">
+                        <h2>Mitra Kami</h2>
+                        <div class="row">
+                            <div class="col-2">
+                                <figure class="figure">
+                                    <img src="asset/image/antam.jpg" class="figure-img img-thumbnail rounded" alt="...">
+                                    <figcaption class="figure-caption text-center">Antam</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-2">
+                                <figure class="figure">
+                                    <img src="asset/image/shopee1.png" class="figure-img img-thumbnail rounded" alt="...">
+                                    <figcaption class="figure-caption text-center">Shopee</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-2">
+                                <figure class="figure">
+                                    <img src="asset/image/MS.jpg" class="figure-img img-thumbnail rounded" alt="...">
+                                    <figcaption class="figure-caption text-center">Antam</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-2">
+                                <figure class="figure">
+                                    <img src="asset/image/MS.jpg" class="figure-img img-thumbnail rounded" alt="...">
+                                    <figcaption class="figure-caption text-center">Antam</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-2">
+                                <figure class="figure">
+                                    <img src="asset/image/antam.jpg" class="figure-img img-thumbnail rounded" alt="...">
+                                    <figcaption class="figure-caption text-center">Antam</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-2">
+                                <figure class="figure">
+                                    <img src="asset/image/antam.jpg" class="figure-img img-thumbnail rounded" alt="...">
+                                    <figcaption class="figure-caption text-center">Antam</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    
+                    <!-- app section -->
+                    
+                    <section class="container-fluid mt-3 p-5 bg-light">
+                        <h2>Download Aplikasi</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#"><img src="asset/image/app.png" height="40"></a>
+                                <a href="#"><img src="asset/image/google.png" height="60"></a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- footer section -->
+                    
+                    <section class="container mt-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <h5>Perusahaan</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Tentang Kami</a></li>
+                                    <li><a href="#">karir</a></li>
+                                    <li><a href="#">Syarat &amp; ketentuan</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h5>Bantuan</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Tentang Kami</a></li>
+                                    <li><a href="#">karir</a></li>
+                                    <li><a href="#">Syarat &amp; ketentuan</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h5>Akun</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Tentang Kami</a></li>
+                                    <li><a href="#">karir</a></li>
+                                    <li><a href="#">Syarat &amp; ketentuan</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h5>Social Media</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fab fa-facebook text-dark"></i>Facebook</a></li>
+                                    <li><a href="#"><i class="fab fa-twitter text-dark"></i>Twiter</a></li>
+                                    <li><a href="#"><i class="fab fa-instagram text-dark"></i>instagram</a></li>
+                                    <li><a href="#"><i class="fab fa-youtube text-dark"></i>Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    
+                    <section class="container mt-3">
+                        <div class="row">
+                            <div class="col-2">
+                                <p>&copy; 2020 toko sembako</p>
+                            </div>
+                            <div class="col-8">
+                            <ul class="list-unstyled">
+                                <li class="list-inline-item">@hdsnvwwcn</li>
+                                <li class="list-inline-item">+087865597</li>
+                                <li class="list-inline-item">GREEN LAKE CITY</li>
+                            </ul>
+                            </div>
+                            <div class="col-2">
+                              <i class="fab fa-cc-visa"></i>
+                              <i class="fab fa-cc-paypal"></i>
+                              <i class="fab fa-cc-mastercard"></i>
+                        </div>
+                        </div>
+                    </section>
+                    
+                    
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <!-- <script src="js/jquery-3.5.1.slim.min.js"></script> -->
+                    <script src="asset/js/jquery-3.5.1.slim.full.js"></script>
+                    <script src="asset/js/popper.min.js"></script>
+                    <script src="asset/js/bootstrap.min.js"></script>
+                </body>
+                </html>
